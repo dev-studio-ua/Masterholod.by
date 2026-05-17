@@ -23,7 +23,7 @@
         .bg-v-purple { background-color: var(--v-purple); }
         .text-v-purple { color: var(--v-purple); }
         html { scroll-behavior: smooth; }
-        .hero-bg { background: linear-gradient(rgba(115, 96, 242, 0.9), rgba(89, 73, 214, 0.95)), url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop'); background-size: cover; background-position: center; }
+        .hero-bg { background: linear-gradient(rgba(115, 96, 242, 0.9), rgba(89, 73, 214, 0.95)), url('images/Sezon-remont-holodilnikov-1024x452.png'); background-size: cover; background-position: center; }
         @keyframes marquee {
             0% { transform: translateX(0%); }
             100% { transform: translateX(-50%); }
@@ -105,6 +105,63 @@
     </section>
 
     <!-- Pricing Grid -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-50 px-4 border-b border-gray-200">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-black uppercase text-v-dark tracking-tight mb-4">Примеры выполненных работ Николая Петровича</h2>
+                <p class="text-gray-500 font-medium">Реальные ремонты на дому у клиентов</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="images/remont-holodilnik-atlant-mhm-1705.jpg" alt="Капитальный ремонт Атлант МХМ-1705" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-black text-gray-900 mb-3 uppercase tracking-tight">Капитальный ремонт Атлант МХМ-1705</h3>
+                        <p class="text-gray-600 font-medium text-sm leading-relaxed">Поиск утечки хладагента в запененной части, промывка системы, заправка фреоном R600a.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="images/remont-holodilnika-indesit-nba181.jpg" alt="Замена компрессора в Indesit NBA181" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-black text-gray-900 mb-3 uppercase tracking-tight">Замена компрессора в Indesit NBA181</h3>
+                        <p class="text-gray-600 font-medium text-sm leading-relaxed">Демонтаж сгоревшего мотора, установка оригинального пускозащитного реле и нового компрессора с гарантией.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="images/remont-holodilnik-siemens-k649nr73.jpg" alt="Ремонт системы No Frost в Siemens" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-black text-gray-900 mb-3 uppercase tracking-tight">Ремонт системы No Frost в Siemens</h3>
+                        <p class="text-gray-600 font-medium text-sm leading-relaxed">Диагностика электроники, замена неисправного вентилятора обдува испарителя и ТЭНа оттайки.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 group">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="images/remont-holodilnika-indesit-tia140-2.jpg" alt="Восстановление герметичности шкафа" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-black text-gray-900 mb-3 uppercase tracking-tight">Восстановление герметичности шкафа</h3>
+                        <p class="text-gray-600 font-medium text-sm leading-relaxed">Профессиональный демонтаж изношенной резины, подбор и замена уплотнителя дверей на дому заказчика.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="pricing" class="py-20 bg-white px-4">
         <div class="container mx-auto max-w-5xl">
             <div class="text-center mb-16">
@@ -377,62 +434,52 @@
     </section>
 
     <!-- SEO / FAQ Accordion -->
-    <section id="faq" class="py-20 bg-white px-4">
-        <div class="container mx-auto max-w-4xl">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-black uppercase text-v-dark tracking-tight mb-4">Полезно знать</h2>
-                <p class="text-gray-500 font-medium">Ответы на частые вопросы и советы по эксплуатации</p>
-            </div>
-
-            <div class="space-y-4">
-
-            <details class="group bg-white rounded-2xl shadow-sm border border-gray-100 mb-4 overflow-hidden">
-                <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-gray-900 hover:text-v-purple transition">
-                    <span class="uppercase tracking-tight">Какой фреон (хладагент)  лучше для холодильника: r12, r134, r600</span>
-                    <span class="transition group-open:rotate-180">
-                        <i class="fas fa-chevron-down text-v-purple"></i>
-                    </span>
-                </summary>
-                <div class="text-gray-600 mt-3 group-open:animate-fadeIn p-6 pt-0 text-sm leading-relaxed border-t border-gray-50">
-                    Выбор холодильника зависит от типа хладагента, который он использует, а также от ваших требований к экологичности, энергоэффективности и безопасности. Ниже приведены рекомендации по выбору холодильников с учетом хладагентов R12, R134a и R600. Плюсы: • Хорошая охлаждающая способность. • Низкий ODP (низкий озоноразрушающий потенциал). • Широко распространен в бытовых и коммерческих системах.Минусы: • Высокий GWP (потенциал глобального потепления). • Требует профессиональной заправки и обслуживания.Рекомендуемый выбор: • Современные бытовые холодильники и кондиционеры, используют R134a. • Обратите внимание на модели с хорошей энергоэффективностью и сертификацией.
-                </div>
-            </details>
-            <details class="group bg-white rounded-2xl shadow-sm border border-gray-100 mb-4 overflow-hidden">
-                <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-gray-900 hover:text-v-purple transition">
-                    <span class="uppercase tracking-tight">Почему не морозит морозильная камера холодильника?</span>
-                    <span class="transition group-open:rotate-180">
-                        <i class="fas fa-chevron-down text-v-purple"></i>
-                    </span>
-                </summary>
-                <div class="text-gray-600 mt-3 group-open:animate-fadeIn p-6 pt-0 text-sm leading-relaxed border-t border-gray-50">
-                    Многим владельцам холодильников приходится сталкиваться с ситуацией, когда выясняется, что не работает морозильная камера. По неизвестным причинам она перестает морозить и держать температуру, что неизбежно приводит к порче продуктов. Неисправность может быть устранена собственными силами или с помощью специалистов. Выбор зависит непосредственно от причины поломки. Рекомендации от мастера по ремонту холодильников с 45 летним опытом. Морозильная камера холодильника может перестать морозить по нескольким причинам. Вот основные возможные причины и рекомендации по их устранению:
-                </div>
-            </details>
-            <details class="group bg-white rounded-2xl shadow-sm border border-gray-100 mb-4 overflow-hidden">
-                <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-gray-900 hover:text-v-purple transition">
-                    <span class="uppercase tracking-tight">Замена уплотнителя в холодильнике</span>
-                    <span class="transition group-open:rotate-180">
-                        <i class="fas fa-chevron-down text-v-purple"></i>
-                    </span>
-                </summary>
-                <div class="text-gray-600 mt-3 group-open:animate-fadeIn p-6 pt-0 text-sm leading-relaxed border-t border-gray-50">
-                    Холодильник – это электроприбор, ценность и полезность которого едва можно преуменьшить. С помощью этой техники мы имеем возможность хранить продукты питания и медикаменты в оптимальных условиях в течение длительного времени. Обеспечение оптимального режима хранения во многом зависит от характеристик герметичности его внутреннего пространства. Во многом герметичность зависит от качества и физического состояния небольшой детали, которая называется уплотнителем – он требует периодической замены. Самое главное об этой процедуре и особенностях самого элемента Вы узнаете далее.
-                </div>
-            </details>
-            <details class="group bg-white rounded-2xl shadow-sm border border-gray-100 mb-4 overflow-hidden">
-                <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-gray-900 hover:text-v-purple transition">
-                    <span class="uppercase tracking-tight">Основные неисправности холодильника и способы их устранения</span>
-                    <span class="transition group-open:rotate-180">
-                        <i class="fas fa-chevron-down text-v-purple"></i>
-                    </span>
-                </summary>
-                <div class="text-gray-600 mt-3 group-open:animate-fadeIn p-6 pt-0 text-sm leading-relaxed border-t border-gray-50">
-                    Прочитайте этот раздел, прежде чем обращаться к частному мастеру или в сервис. Это может сэкономить время и деньги. В этом списке приведены наиболее распространенные ситуации, которые не являются результатом плохого качества сборки или материалов. Возможно, вилка вынута из розетки. Плотно вставьте ее в розетку. В доме перегорел предохранитель или отключился автоматический прерыватель. Проверьте при необходимости, замените предохранитель или включите автоматический прерыватель. Слишком высокая температура в холодильном или морозильном отделении
-                </div>
-            </details>
-            </div>
-        </div>
-    </section>
+    <section class="py-20 bg-white px-4" id="faq">
+<div class="container mx-auto max-w-4xl">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-5xl font-black uppercase text-v-dark tracking-tight mb-4">Полезно знать</h2>
+<p class="text-gray-500 font-medium">Ответы на частые вопросы и советы по эксплуатации</p>
+</div>
+<div class="space-y-4">
+<details class="group bg-white rounded-2xl shadow-sm border border-gray-100 mb-4 overflow-hidden">
+<summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-gray-900 hover:text-v-purple transition">
+<span class="uppercase tracking-tight">Какой фреон (хладагент)  лучше для холодильника: r12, r134, r600</span>
+<span class="transition group-open:rotate-180">
+<i class="fas fa-chevron-down text-v-purple"></i>
+</span>
+</summary>
+<div class="text-gray-600 mt-3 group-open:animate-fadeIn p-6 pt-0 text-sm leading-relaxed border-t border-gray-50"><p class="mb-3">Выбор холодильника зависит от типа хладагента, который он использует, а также от ваших требований к экологичности, энергоэффективности и безопасности. Ниже приведены рекомендации по выбору холодильников с учетом хладагентов R12, R134a и R600. Плюсы:</p><ul class="list-disc ml-5 mb-1"><li class="mb-1">Хорошая охлаждающая способность.</li><li class="mb-1">Низкий ODP (низкий озоноразрушающий потенциал).</li><li class="mb-1">Широко распространен в бытовых и коммерческих системах.</li></ul><p class='mt-4 mb-2 font-bold'>Минусы:</p><ul class='list-disc ml-5 mb-1'><li class="mb-1">Высокий GWP (потенциал глобального потепления).</li><li class="mb-1">Требует профессиональной заправки и обслуживания.</li></ul><p class='mt-4 mb-2 font-bold'>Рекомендуемый выбор:</p><ul class='list-disc ml-5 mb-1'><li class="mb-1">Современные бытовые холодильники и кондиционеры, используют R134a.</li><li class="mb-1">Обратите внимание на модели с хорошей энергоэффективностью и сертификацией.</li></ul></div>
+</details>
+<details class="group bg-white rounded-2xl shadow-sm border border-gray-100 mb-4 overflow-hidden">
+<summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-gray-900 hover:text-v-purple transition">
+<span class="uppercase tracking-tight">Почему не морозит морозильная камера холодильника?</span>
+<span class="transition group-open:rotate-180">
+<i class="fas fa-chevron-down text-v-purple"></i>
+</span>
+</summary>
+<div class="text-gray-600 mt-3 group-open:animate-fadeIn p-6 pt-0 text-sm leading-relaxed border-t border-gray-50"><p class="mb-3">Многим владельцам холодильников приходится сталкиваться с ситуацией, когда выясняется, что не работает морозильная камера. По неизвестным причинам она перестает морозить и держать температуру, что неизбежно приводит к порче продуктов. Неисправность может быть устранена собственными силами или с помощью специалистов. Выбор зависит непосредственно от причины поломки. Рекомендации от мастера по ремонту холодильников с 45 летним опытом. Морозильная камера холодильника может перестать морозить по нескольким причинам. Вот основные возможные причины и рекомендации по их устранению:</p></div>
+</details>
+<details class="group bg-white rounded-2xl shadow-sm border border-gray-100 mb-4 overflow-hidden">
+<summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-gray-900 hover:text-v-purple transition">
+<span class="uppercase tracking-tight">Замена уплотнителя в холодильнике</span>
+<span class="transition group-open:rotate-180">
+<i class="fas fa-chevron-down text-v-purple"></i>
+</span>
+</summary>
+<div class="text-gray-600 mt-3 group-open:animate-fadeIn p-6 pt-0 text-sm leading-relaxed border-t border-gray-50"><p class="mb-3">Холодильник – это электроприбор, ценность и полезность которого едва можно преуменьшить. С помощью этой техники мы имеем возможность хранить продукты питания и медикаменты в оптимальных условиях в течение длительного времени. Обеспечение оптимального режима хранения во многом зависит от характеристик герметичности его внутреннего пространства. Во многом герметичность зависит от качества и физического состояния небольшой детали, которая называется уплотнителем – он требует периодической замены. Самое главное об этой процедуре и особенностях самого элемента Вы узнаете далее.</p></div>
+</details>
+<details class="group bg-white rounded-2xl shadow-sm border border-gray-100 mb-4 overflow-hidden">
+<summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-gray-900 hover:text-v-purple transition">
+<span class="uppercase tracking-tight">Основные неисправности холодильника и способы их устранения</span>
+<span class="transition group-open:rotate-180">
+<i class="fas fa-chevron-down text-v-purple"></i>
+</span>
+</summary>
+<div class="text-gray-600 mt-3 group-open:animate-fadeIn p-6 pt-0 text-sm leading-relaxed border-t border-gray-50"><p class="mb-3">Прочитайте этот раздел, прежде чем обращаться к частному мастеру или в сервис. Это может сэкономить время и деньги. В этом списке приведены наиболее распространенные ситуации, которые не являются результатом плохого качества сборки или материалов. Возможно, вилка вынута из розетки. Плотно вставьте ее в розетку. В доме перегорел предохранитель или отключился автоматический прерыватель. Проверьте при необходимости, замените предохранитель или включите автоматический прерыватель. Слишком высокая температура в холодильном или морозильном отделении</p></div>
+</details>
+</div>
+</div>
+</section>
 
     <!-- Geography -->
     <section id="geo" class="py-20 bg-gray-50 px-4 border-t border-gray-200">
@@ -497,56 +544,58 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-16 px-4 border-t-4 border-v-purple">
-        <div class="container mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-10">
-            <div>
-                <a href="#" class="text-2xl font-black text-white uppercase tracking-tighter leading-none mb-4 block">
+    <footer class="bg-gray-900 text-white pt-16 pb-8 px-4 border-t-4 border-v-purple relative overflow-hidden">
+<img alt="Мастер" class="absolute bottom-0 right-10 max-h-96 opacity-10 pointer-events-none hidden lg:block" src="images/master-man-footer.png"/>
+<div class="container mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-4 gap-10 relative z-10 relative z-10">
+<div>
+<a class="text-2xl font-black text-white uppercase tracking-tighter leading-none mb-4 block" href="#">
                     🧊 РемонтХолода.бел
                 </a>
-                <p class="text-gray-400 text-sm leading-relaxed mb-6">Профессиональный ремонт холодильников и морозильников в Минске на дому. Быстро, качественно, с гарантией.</p>
-                <div class="flex space-x-4">
-                    <a href="https://t.me/minsk_remont_holodilnikov" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-v-purple transition text-white">
-                        <i class="fab fa-telegram"></i>
-                    </a>
-                </div>
-            </div>
+<p class="text-gray-400 text-sm leading-relaxed mb-6">Профессиональный ремонт холодильников и морозильников в Минске на дому. Быстро, качественно, с гарантией.</p>
+<div class="flex space-x-4">
+<a class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-v-purple transition text-white" href="https://t.me/minsk_remont_holodilnikov" target="_blank">
+<i class="fab fa-telegram"></i>
+</a>
+</div>
+</div>
+<div>
+<h3 class="font-black uppercase tracking-widest text-sm mb-6 text-gray-300">Контакты</h3>
+<ul class="space-y-4 text-sm text-gray-400">
+<li class="flex items-start">
+<i class="fas fa-map-marker-alt mt-1 mr-3 text-v-purple"></i>
+<span>ул. Лобанка, дом 89, Минск</span>
+</li>
+<li class="flex items-center">
+<i class="fas fa-phone-alt mr-3 text-v-purple"></i>
+<a class="hover:text-white transition" href="tel:+375291646510">+375 (29) 164-65-10 (A1)</a>
+</li>
+<li class="flex items-center">
+<i class="fas fa-phone mr-3 text-v-purple"></i>
+<a class="hover:text-white transition" href="tel:+375298505264">+375 (29) 850-52-64 (MTS)</a>
+</li>
+<li class="flex items-center">
+<i class="fas fa-envelope mr-3 text-v-purple"></i>
+<a class="hover:text-white transition" href="mailto:info@ремонтхолодильников.бел">info@ремонтхолодильников.бел</a>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="font-black uppercase tracking-widest text-sm mb-6 text-gray-300">Реквизиты</h3>
+<div class="text-xs text-gray-500 leading-relaxed space-y-2 font-medium">
+<p>ИП Шут Николай Петрович</p>
+<p>УНП 192077341</p>
+<p>Зарегистрирован Минским горисполкомом 11.06.2013г.</p>
+</div>
+</div>
 
-            <div>
-                <h3 class="font-black uppercase tracking-widest text-sm mb-6 text-gray-300">Контакты</h3>
-                <ul class="space-y-4 text-sm text-gray-400">
-                    <li class="flex items-start">
-                        <i class="fas fa-map-marker-alt mt-1 mr-3 text-v-purple"></i>
-                        <span>ул. Лобанка, дом 89, Минск</span>
-                    </li>
-                    <li class="flex items-center">
-                        <i class="fas fa-phone-alt mr-3 text-v-purple"></i>
-                        <a href="tel:+375291646510" class="hover:text-white transition">+375 (29) 164-65-10 (A1)</a>
-                    </li>
-                    <li class="flex items-center">
-                        <i class="fas fa-phone mr-3 text-v-purple"></i>
-                        <a href="tel:+375298505264" class="hover:text-white transition">+375 (29) 850-52-64 (MTS)</a>
-                    </li>
-                    <li class="flex items-center">
-                        <i class="fas fa-envelope mr-3 text-v-purple"></i>
-                        <a href="mailto:info@ремонтхолодильников.бел" class="hover:text-white transition">info@ремонтхолодильников.бел</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div>
-                <h3 class="font-black uppercase tracking-widest text-sm mb-6 text-gray-300">Реквизиты</h3>
-                <div class="text-xs text-gray-500 leading-relaxed space-y-2 font-medium">
-                    <p>ИП Шут Николай Петрович</p>
-                    <p>УНП 192077341</p>
-                    <p>Зарегистрирован Минским горисполкомом 11.06.2013г.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container mx-auto max-w-6xl mt-12 pt-8 border-t border-gray-800 text-center text-xs text-gray-600 font-medium uppercase tracking-widest">
+<div class="hidden md:flex flex-col items-center justify-end relative">
+<img alt="Мастер Николай Петрович" class="absolute bottom-[-4rem] max-h-72 object-contain drop-shadow-2xl" src="images/master-man-footer.png"/>
+</div>
+</div>
+<div class="container mx-auto max-w-6xl mt-12 pt-8 border-t border-gray-800 text-center text-xs text-gray-600 font-medium uppercase tracking-widest">
             © 2026 РемонтХолодильников.бел. Все права защищены.
         </div>
-    </footer>
+</footer>
 
     <!-- Review Modal -->
     <div id="reviewModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[100] hidden flex items-center justify-center p-4">
